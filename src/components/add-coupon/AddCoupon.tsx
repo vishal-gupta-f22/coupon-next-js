@@ -29,13 +29,14 @@ const AddCoupon = ({  pullData, temp }) => {
     const [payamt, setPayAmt] = React.useState<string>('');
 
     const handelDate = () => {
+        // @ts-ignore
         setData({ ...data, expiry: `${value.getDate() + '-' + value.getMonth() + '-' + value.getFullYear()}` })
     }
 
     React.useEffect(() => {
         handelDate()
     }, [value])
-
+// @ts-ignore
     const handelDis = (val) => {
         var temp: Array<String> = val.split(';')
         setData({ ...data, description: temp })
@@ -50,10 +51,13 @@ const AddCoupon = ({  pullData, temp }) => {
     }
 
     const checkFields = () => {
+        // @ts-ignore
         if (!data.title.trim(' ')) {
             alert('Title Cannot be empty')
+            // @ts-ignore
         } else if (!data.cuponCode.trim(' ')) {
             alert('Coupon Code Cannot be empty')
+            // @ts-ignore
         } else if (!data.paymentMode.trim(' ')) {
             alert('Payment Mode Cannot be empty')
         } else if (data.description.length === 0) {
@@ -69,7 +73,7 @@ const AddCoupon = ({  pullData, temp }) => {
 
     return (
         <div style={{ maxWidth: 320, margin: 'auto' }}>
-            <TextInput label="Coupon Title" placeholder="Coupon Title" withAsterisk value={data.title} onChange={(e) => setData({ ...data, title: e.target.value })} />
+            <TextInput label="Coupon Title" placeholder="Coupon Title" withAsterisk  value={data.title} onChange={(e) => setData({ ...data, title: e.target.value })} />
             <TextInput mt="md" label="Coupon Code" placeholder="Coupon Code" withAsterisk value={data.cuponCode} onChange={(e) => setData({ ...data, cuponCode: e.target.value })} />
             <DatePicker placeholder="Pick date" label="Event date" withAsterisk value={value} onChange={setValue} />
             <TextInput mt="md" label="Payment Mode" placeholder="Payment Mode" withAsterisk value={data.paymentMode} onChange={(e) => setData({ ...data, paymentMode: e.target.value })} />

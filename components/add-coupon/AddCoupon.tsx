@@ -6,7 +6,7 @@ import { TextInput, Button, Group, Title } from '@mantine/core';
 import { DatePicker } from '@mantine/dates';
 import { Textarea } from '@mantine/core';
 import { Select } from '@mantine/core';
-
+// @ts-ignore
 import names from '../../types';
 // @ts-nocheck
 const AddCoupon = ({ pullData, temp }) => {
