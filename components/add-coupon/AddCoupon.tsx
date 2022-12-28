@@ -1,11 +1,13 @@
+
+
 import React from 'react';
 import { useForm } from '@mantine/form';
 import { TextInput, Button, Group, Title } from '@mantine/core';
 import { DatePicker } from '@mantine/dates';
 import { Textarea } from '@mantine/core';
 import { Select } from '@mantine/core';
-import names from '../../types';
 
+import names from '../../types';
 
 const AddCoupon = ({ setOpened, pullData, temp }) => {
     // new Date()
@@ -29,6 +31,7 @@ const AddCoupon = ({ setOpened, pullData, temp }) => {
     const [payamt, setPayAmt] = React.useState<string>('');
 
     const handelDate = () => {
+        // @ts-ignore
         setData({ ...data, expiry: `${value.getDate() + '-' + value.getMonth() + '-' + value.getFullYear()}` })
     }
 
