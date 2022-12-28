@@ -9,7 +9,7 @@ import { Select } from '@mantine/core';
 
 import names from '../../types';
 // @ts-nocheck
-const AddCoupon = ({ setOpened, pullData, temp }) => {
+const AddCoupon = ({ pullData, temp }) => {
     // new Date()
     const [value, setValue] = React.useState<Date | null>(new Date());
  
