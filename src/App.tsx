@@ -6,7 +6,7 @@ import { ApiCall } from './utils/ApiMethods';
 
 
 function App() {
-  console.log(ApiCall.getInstance())
+  // console.log(ApiCall.getInstance())
   // ApiCall.get()
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS>
