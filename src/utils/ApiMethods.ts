@@ -4,7 +4,7 @@ export { }
 export class ApiCall {
 
     url: string;
-   
+   // @ts-ignore
     static instace: ApiCall = null;
 
     constructor(url: string) {
