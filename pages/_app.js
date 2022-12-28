@@ -9,7 +9,6 @@ export default function MyApp({ Component, pageProps }) {
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      vbnm,...,mnbvcxcvbnm,.,mnbvcvbnm,.,mnbvbnm,
      <Component {...pageProps} />
    </div>
   )
