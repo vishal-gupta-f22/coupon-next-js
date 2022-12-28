@@ -6,8 +6,8 @@ import { Textarea } from '@mantine/core';
 import { Select } from '@mantine/core';
 import names from '../../types';
 
-
-const AddCoupon = ({ setOpened, pullData, temp }) => {
+// @ts-ignore
+const AddCoupon = ({  pullData, temp }) => {
     // new Date()
     const [value, setValue] = React.useState<Date | null>(new Date());
  
