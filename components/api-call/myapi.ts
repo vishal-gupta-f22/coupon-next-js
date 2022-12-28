@@ -1,0 +1,1 @@
+export const url = 'https://coupon-server.onrender.com/coupon'  
