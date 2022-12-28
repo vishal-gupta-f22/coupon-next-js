@@ -1,5 +1,6 @@
 import React from 'react'
 import ListCoupon from '../list-coupon/ListCoupon'
+// @ts-ignore
 import styles from './Table.module.css'
 import { Button, Modal, useMantineTheme } from '@mantine/core';
 import AddCoupon from '../add-coupon/AddCoupon';
