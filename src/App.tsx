@@ -1,8 +1,8 @@
 
 import './App.css'
 import { MantineProvider, Text,Badge, Button } from '@mantine/core';
-import Table from './components/table/Table';
-import { ApiCall } from './utils/ApiMethods';
+// import Table from './components/table/Table';
+// import { ApiCall } from './utils/ApiMethods';
 
 
 function App() {
