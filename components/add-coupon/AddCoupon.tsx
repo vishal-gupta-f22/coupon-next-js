@@ -8,7 +8,7 @@ import { Textarea } from '@mantine/core';
 import { Select } from '@mantine/core';
 
 import names from '../../types';
-
+// @ts-nocheck
 const AddCoupon = ({ setOpened, pullData, temp }) => {
     // new Date()
     const [value, setValue] = React.useState<Date | null>(new Date());
@@ -53,10 +53,13 @@ const AddCoupon = ({ setOpened, pullData, temp }) => {
     }
 
     const checkFields = () => {
+// @ts-ignore
         if (!data.title.trim(' ')) {
             alert('Title Cannot be empty')
+            // @ts-ignore
         } else if (!data.cuponCode.trim(' ')) {
             alert('Coupon Code Cannot be empty')
+            // @ts-ignore
         } else if (!data.paymentMode.trim(' ')) {
             alert('Payment Mode Cannot be empty')
         } else if (data.description.length === 0) {
