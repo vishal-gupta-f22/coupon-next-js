@@ -64,6 +64,7 @@ const Table = () => {
     const editData = (data) => {
 
         setEditOpened(true)
+        // @ts-ignore
         setTemp({ ...temp, data })
 
     }
